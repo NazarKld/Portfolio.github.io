@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sansita Swashed', cursive;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  height: 60px;
+  background-color: #d3dae0da;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.logo-link {
+  color: black;
+  font-size: 30px;   
+}
+
+.logo-link:hover {
+  color:#17a2b8;
+  font-size: 35px;
+  transition: all 0.6s;
+
+}
+
+.header-menu {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-link {
+  color: black;
+  font-size: 20px;
+}
+
+.menu-link:hover {
+  color:#17a2b8;
+  font-size: 25px;
+  transition: all 0.6s;
+}
+
+.section {
+  height: 100vh;
+  padding-top: 60px;
+}
+
+#home {
+  background-image: url(1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home-title {
+  color: black;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  animation: fade-in-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+}
+
+.works-title {
+  color: #17a2b8;
+  position: relative;
+  left: 3%;
+  animation: bounce-in-top 2.1s both;
+}
+
+.about-title {
+  color: black;
+  position: relative;
+  top: 10%;
+  left: 5%;
+  animation: fade-in-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+}
+
+.about-subtitle {
+  color: #17a2b8;
+  position: relative;
+  top: 15%;
+  left: 8%;
+  animation: fade-in-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+}
+
+.button-title {
+  color: black;
+  position: absolute;
+  top: 23%;
+  left: 25%;
+  animation: fade-in-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+}
+
+.btn-write {
+  color: white;
+}
+
+.btn-write:hover {
+  color: cadetblue;
+  transition: all 0.6s;
+}
+
+.arrow {
+  position: absolute;
+  font-size: 40px;
+  bottom: 3%;
+  left: 50%;
+  animation: bounce-top 0.9s infinite both;
+}
+
+#about {
+  background-image: url(3.jpg);
+  background-size: cover;
+}
+
+#works {
+  background-image: url(2.jpg);
+  background-size: cover; 
+}
+
+#contact {
+  background-image: url(4.jpg);
+  background-size: cover;   
+}
+
+.page {
+  height: 100vh;
+
+}
+
+.form-section {
+  width: 300px;
+  min-height: 500px;
+  background-color:#c75d0a;
+  padding: 16px;
+  border-radius: 8px;
+  display: none;
+}
+label {
+  color: white;
+}
+
+.fade-in-top {
+	animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
